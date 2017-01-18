@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-section-container {
+    float: left;
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.slider-content {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 940px;
+    background: red;
+}
+.slider-content ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 2000px;
+}
+.slider-content ul li {
+    list-style: none;
+    width: 205px;
+    float: left;
+    background: #90ee90;
+    margin-right: 40px;
+    height: 200px;
+}
+/*.slider-content ul li:last-child {
+    margin-right: 0;
+}*/
+
+.slider-controls a {
+    background-repeat: no-repeat;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    top: calc(50% - 32px);
+    top: -webkit-calc(50% - 32px);
+    width: 64px;
+    text-indent: -9999px;
+
+}
+.slider-controls a.next {
+    background: url("../img/next.png");
+    right: 0;
+}
+.slider-controls a.prev {
+    background: url("../img/prev.png");
+    left: 0;
+}
+
+
+
+@media (max-width: 960px) {
+    .slider-content {
+        width: 770px;
+    }
+    .slider-content ul li {
+        width: 230px
+    }
+    /*.slider-content ul li:nth-child(4n) {
+        margin-right: 2%;
+    }
+    .slider-content ul li:nth-child(3n) {
+        margin-right: 0%;
+    }*/
+}
+@media (max-width: 767px) {
+    .slider-content {
+        width: 600px;
+    }
+    .slider-content ul li {
+        width: 280px;
+    }
+    /*.slider-content ul li:nth-child(4n) {
+        margin-right: 2%;
+    }
+    .slider-content ul li:nth-child(3n) {
+        margin-right: 2%;
+    }
+    .slider-content ul li:nth-child(2n) {
+        margin-right: 0;
+    }*/
+}
+@media (max-width: 600px) {
+    .slider-content {
+        width: 320px;
+    }
+    .slider-content ul li {
+        width: 320px;
+    }
+    /*.slider-content ul li:nth-child(4n) {
+        margin-right: 0%;
+    }
+    .slider-content ul li:nth-child(3n) {
+        margin-right: 0%;
+    }
+    .slider-content ul li:nth-child(2n) {
+        margin-right: 0%;
+    }*/
+}

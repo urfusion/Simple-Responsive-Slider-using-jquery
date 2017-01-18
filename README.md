@@ -1,1 +1,4 @@
-# Simple-Responsive-Slider-using-jquery
+infinite_Image_Carousel
+=======================
+
+Continue image carousel
